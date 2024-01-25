@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">
+        <img class="menu-icon" src="./images/icon-menu.svg" alt="Hamburger">
+        <img src="./images/logo.svg" alt="" class="src">
+        <ul class="nav-links">
+          <img src="./images/icon-close.svg" alt='close-navbar' class="close-nav">
+
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="cart-container">
+          <img src="./images/icon-cart.svg" alt="Cart Image" class="cart-icon">
+        <small class="cart-quantity"></small>
+        </button>
+        <img src="./images/image-avatar.png" alt="Customer Avatar" id="avatar">
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="cart">
+      <h1 class="cart-header">Cart</h1>
+      <br>
+      <div class="empty">Your cart is empty</div>
+    </div>
+
+    <div class="left-side">
+      <svg class="close-btn" width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="hsl(26, 100%, 55%)" fill-rule="evenodd"/></svg>
+
+      
+      </button>
+      <div class="product">
+        <div class="view-switch">
+          <button class="next-view">
+            <img src="./images/icon-next.svg" alt="next" />
+          </button>
+          <button class="prev-view">
+            <img src="./images/icon-previous.svg" alt="previous" />
+          </button>
+  
+        </div>
+        <img src="./images/image-product-1.jpg" alt="" class="product-focus">
+      </div>
+
+      <div class="mini-products">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="" class="lightbox image-1">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="" class="lightbox image-2">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="" class="lightbox image-3">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="" class="lightbox image-4">
+      </div>
+    </div>
+    <div class="right-side">
+      <p>SNEAKER COMPANY</p>
+      <div class="title">Fall Limited Edition Sneakers</div>
+      <div class="description">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </div>
+      <div class="price">
+        <div class="discount">
+          <h1>
+            $125.00 
+          </h1>
+          <h3>50%</h3>  
+        </div>
+       <p class="old-price">
+        $250.00
+       </p>
+      </div>
+
+      <div class="add-to-cart">
+        <div class="add-remove">
+          <button class="btn minus" ><img src="./images/icon-minus.svg" alt=""> </button>
+          <button class="count"> 0 </button>
+          <button class="btn add" > <img src="./images/icon-plus.svg" alt=""> </button>
+        </div>
+        <button class="add-to-cart-btn">
+          <img src="./images/icon-cart.svg" alt="">
+          <p>Add to cart</p>
+        </button>
+      </div>
+    </div>
+    <div class="overlay ">
+      <div class="overlay-container">
+        <button class="close-overlay"><img src="./images/icon-close.svg" alt="close"></button>
+        <img
+          src="./images/image-product-1.jpg"
+          alt="product"
+          class="focus"
+        />
+        <div class="preview">
+          <img
+            class="lightbox image-1"
+            src="./images/image-product-1-thumbnail.jpg"
+            alt=""
+          />
+          <img src="./images/image-product-2-thumbnail.jpg" alt="" class="lightbox image-2"/>
+          <img src="./images/image-product-3-thumbnail.jpg" alt="" class="lightbox image-3"/>
+          <img src="./images/image-product-4-thumbnail.jpg" alt="" class="image-4 lightbox"/>
+        </div>
+      </div>
+    </div>
+  </main>
+ 
+  <!-- Lightbox -->
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Caleb Ogbike</a>.
+    </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
