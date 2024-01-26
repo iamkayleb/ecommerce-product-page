@@ -96,7 +96,7 @@ nav {
     border-radius: 10px;
     background-color: white;
     z-index: 3;
-    
+    padding: 20px;
     position: absolute;
     display: none;
     right: 20px;
@@ -105,7 +105,7 @@ nav {
 .empty {
     font-size: 16px;
     text-align: center;
-    
+    padding: 20px;
 }
 .cart-header {
     font-size: 20px;
@@ -146,6 +146,11 @@ span {
 }
 .delete-icon {
     padding: 10px;
+}
+.attribution {
+    display: flex;
+    justify-content: center;
+    
 }
 /* End Of HEader */
 
@@ -378,7 +383,7 @@ main {
         justify-content: left;
         align-items: flex-start;
         transform: translate(-100%);
-        z-index: 2;
+        z-index: 4;
         transition: 0.2s ease-in ;
     }
     #logo {
