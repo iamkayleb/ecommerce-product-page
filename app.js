@@ -55,9 +55,12 @@ lightBoxes.forEach(function(box){
         productFocus.setAttribute('src', productViews[3])
         overlayFocus.setAttribute('src', productViews[3])
        }
+
         
     })
 })
+
+
 /* start of sidebar */
 menuIcon.addEventListener('click', function(){
     navLinks.classList.add('show-sidebar')
@@ -143,18 +146,14 @@ function showOrderSummary(){
             <div class="checkout">
                 <button class="checkout-btn">Checkout</button>
             </div>`
-      
-            const deleteIcon = document.querySelector('.delete-icon')
-            deleteIcon.addEventListener('click', function(){
-                cartInfo.innerHTML = `${empty.innerHTML}`
-            })
-     
+            
         }
-    
     }
-        
+
+      
     
 }
+
 
 
 
@@ -170,6 +169,10 @@ productFocus.addEventListener('click', function(){
         overlay.style.display = 'flex'
         console.log(overlay)
         
+    }
+    if (window.innerWidth <= 760){
+        overlay.style.display = 'none'
+        console.log(overlay)
     }
 })
 
